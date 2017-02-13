@@ -35,7 +35,7 @@ function type3(count) {
 	
 };
 function initType3(){
-	$('#C0').css("backgroundImage", "url('Fotos/Home/Blog.jpg')").addClass("backgroundImg").on('click',function(e){ about(); }).append( "<p class='hidden'>About</p>" );
+	$('#C0').css("backgroundImage", "url('Fotos/Home/blog.jpg')").addClass("backgroundImg").on('click',function(e){ about(); }).append( "<p class='hidden'>About</p>" );
 	$('#C1').css("backgroundImage", "url('Fotos/Home/yogaMatten.jpg')").addClass("backgroundImg").on('click',function(e){ }).append( "<p class='hidden'>Yoga</p>" );
 	$('#C2').css("backgroundImage", "url('Fotos/Home/classicDance.jpg')").addClass("backgroundImg").on('click',function(e){  }).append( "<p class='hidden'>ClassicDance</p>");
 	$('#C3').css("backgroundImage", "url('Fotos/Home/travel.jpg')").addClass("backgroundImg").on('click',function(e){}).append( "<p class='hidden'>Travel</p>" );
@@ -43,8 +43,8 @@ function initType3(){
 	$('#C5').css("backgroundImage", "url('Fotos/Home/Zumba.jpg')").addClass("backgroundImg").on('click',function(e){ about(); }).append( "<p class='hidden'>Zumba</p>" );
 	
 	$('#C0').hover(
-		function() { $('#C0').css("background-image", "url('Fotos/Home/Blog1.jpg')");$('#C0 p').addClass('visible').removeClass('hidden')},
-		function() { $('#C0').css("background-image", "url('Fotos/Home/Blog.jpg')");$('#C0 p').addClass('hidden').removeClass('visible')}
+		function() { $('#C0').css("background-image", "url('Fotos/Home/blog1.jpg')");$('#C0 p').addClass('visible').removeClass('hidden')},
+		function() { $('#C0').css("background-image", "url('Fotos/Home/blog.jpg')");$('#C0 p').addClass('hidden').removeClass('visible')}
 	); 
 	$('#C1').hover(
 		function() { $('#C1').css("background-image", "url('Fotos/Home/yogaMatten1.jpg')");$('#C1 p').addClass('visible').removeClass('hidden')},
