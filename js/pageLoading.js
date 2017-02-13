@@ -40,7 +40,7 @@ function initType3(){
 	$('#C2').css("backgroundImage", "url('Fotos/Home/classicDance.jpg')").addClass("backgroundImg").on('click',function(e){  }).append( "<p class='hidden'>ClassicDance</p>");
 	$('#C3').css("backgroundImage", "url('Fotos/Home/travel.jpg')").addClass("backgroundImg").on('click',function(e){}).append( "<p class='hidden'>Travel</p>" );
 	$('#C4').css("backgroundImage", "url('Fotos/Home/food.jpg')").addClass("backgroundImg").on('click',function(e){ food(); }).append( "<p class='hidden'>Food</p>" );
-	$('#C5').css("backgroundImage", "url('Fotos/Home/Zumba.jpg')").addClass("backgroundImg").on('click',function(e){ about(); }).append( "<p class='hidden'>Zumba</p>" );
+	$('#C5').css("backgroundImage", "url('Fotos/Home/Zumba.jpg')").addClass("backgroundImg").on('click',function(e){ about(); }).append( "<p class='hidden'>LatinDance</p>" );
 	
 	$('#C0').hover(
 		function() { $('#C0').css("background-image", "url('Fotos/Home/blog1.jpg')");$('#C0 p').addClass('visible').removeClass('hidden')},
