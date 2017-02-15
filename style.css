@@ -3,23 +3,13 @@ html body{
   height: 100%;
 }
 body{
-	font-family: "Montserrat",serif;
+	font-family: serif;
     font-size: 90%;
 	font-weight:100;
     margin: 0em;
     padding: 0em;
 }
-
-@font-face{
-	font-family:"Montserrat";
-	font-style: normal;
-	font-weight:100;
-	src:url(http://fonts.gstatic.com/s/montserrat/v7/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2);
-}
 div{
-	/*width:20%;
-	height:25em;*/
-	
 	overflow:hidden;
 }
 /*------------------------------------------
@@ -31,41 +21,24 @@ nav{
 	margin:0px;
 	margin-left:auto;
 	margin-right:auto;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
 	text-transform: uppercase;
 }
 /*Überschrift nav*/
 h1{	
+	font-weight:500;
 	letter-spacing: 0.2em;
 	float:left;
 	margin-left:50px;
 	margin-top:0.6em;
-}
-/*Überschrift div*/
-h2{	
-	font-size: 100%;
-	font-weight: bold;
-	letter-spacing: 0.2em;
-	display:center;
-	text-align: center;
-	margin-top:0.6em;
-}
-/*Footer*/
-h3{	
-	font-size:80%;
-	letter-spacing: 0.2em;
-	float:left;
-	margin-left:50px;
-	margin-top:10px;
-	padding:10px;
 }
 nav ul{
 	float:right;
 	margin-right: 10px;
 }
-nav lo{
-	letter-spacing: 0.2em;
-	font-size:80%;
+nav li{
+	letter-spacing: 0.3em;
+	font-size:75%;
 	list-style-type:none;
 	float:right;
 	margin:2px;
@@ -74,7 +47,7 @@ nav lo{
 	border: 2px solid #fff;
 }
 /*hover effect on nav lo*/
-nav lo:hover{border-bottom-color:black;cursor:pointer;}
+nav li:hover{border-bottom-color:black;cursor:pointer;}
 /*------------------------------------------
 						Main
 ------------------------------------------*/
@@ -84,16 +57,23 @@ nav lo:hover{border-bottom-color:black;cursor:pointer;}
 .visible{
 	display:block;
 }
+.box{
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
 main{
 	height:auto;
 	width:1038px;
 	padding:0px;
-	margin:0px;
+	margin-top:15px;
+	margin-bottom:15px;
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
 }
-
 /*type 3: 1 large, 1 small*/
 .small{
 	display:inline-block;
@@ -104,6 +84,21 @@ main{
 	display:inline-block;
 	height:275px;
 	width:59%;
+}
+.xLarge{
+	height:200px;
+	margin:0px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.message{
+	margin: 0px;
+	letter-spacing: 0.2em;
+	text-align:center;
+	line-height: 200px;
+	font-family: serif;
+	font-weight: 300;
+	font-size: 400%;
 }
 /*overlay index side*/
 .wrapper {
@@ -145,25 +140,37 @@ main{
 /*------------------------------------------
 				Footer
 ------------------------------------------*/
+/*Footer*/
+h3{	
+	font-size:80%;
+	letter-spacing: 0.5em;
+	margin-left:50px;
+	line-height: 40px;
+	width:300px;
+	display:inline;
+}
 footer{
-	font-family: "Montserrat",serif;
+	font-family:serif;
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 	width:1038px;
-	margin:0px;
+	margin:20px;
 	margin-left:auto;
 	margin-right:auto;
-	height:50px;
-	border-top: 1px solid #ccc;
+	height:40px;
+	border-top: 2px solid #ccc;
 }
 footer ul{
 	float:right;
+	margin:0px;
+	padding:0px;
 	margin-right: 5px;
 }
 footer img{
+	margin:8px;
 	height:28px;
-		padding-right:15px;
+	padding-right:15px;
 }
 /*hover effect on footer lo*/
 footer lo:hover{border-bottom-color:black;}
@@ -173,15 +180,27 @@ footer lo:hover{border-bottom-color:black;}
 @media screen and (max-width:1038px){
 	h1{
 		margin-bottom:5px;
+		width:800px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-left:5px;
 	}
 	nav ul{
+		margin:0px;
+		padding:0px;
+		width:800px;
+		margin-left:auto;
+		margin-right:auto;
+		direction: rtl; 
+	}
+	nav li{
 		float:left;
-		margin-top:0px;
-		margin-bottom:0px;
+		margin-left:0px;
+		padding-left:2px;
 	}
 	nav{
 		height:80px;
-		border-bottom:0px;
+
 	}
 	.home,nav,footer,main{
 		width:800px;
